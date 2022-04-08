@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - print all possible combination
+ * main - Prints all possible combinations of three different digits,
+ * in ascending order, separated by a comma followed by a space.
  *
- * Return: 0
+ * Return: Always 0
  */
 int main(void)
 
@@ -12,11 +13,11 @@ int main(void)
 
 	for (digit1 = 0; digit1 < 8; digit1++)
 	{
-	for (digit2 = digit1 + 1; digit2 < 9; digit2++)
-	{
-	for (digit3 = digit1 + 1; digit3 < 10; digit3++)
-	{
-	putchar((digit1 % 10) + '0');
+		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
+		{
+			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
+			{
+	putchar((digit1 % 10) + '0'); 
 	putchar((digit2 % 10) + '0');
 	putchar((digit2 % 10) + '0');
 
