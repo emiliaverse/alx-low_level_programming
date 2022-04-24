@@ -25,5 +25,4 @@ char *leet(char *str)
 		i++;
 	}
 	return (str);
-}
-				
+}				
