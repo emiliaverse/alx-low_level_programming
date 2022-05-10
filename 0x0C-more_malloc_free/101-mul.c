@@ -1,5 +1,6 @@
-#include "main.h"
+#include"main.h"
 #include <stdlib.h>
+
 /**
  * _print - moves a string one place to the left and prints the string
  * @str: string to move
@@ -60,7 +61,6 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 	}
 	return (dest);
 }
-
 /**
  * check_for_digits - checks the arguments to ensure they are digits
  * @av: pointer to arguments
@@ -94,7 +94,7 @@ void init(char *str, int l)
 	int i;
 
 	for (i = 0; i < l; i++)
-		str[i] = '0';
+	str[i] = '0';
 	str[i] = '\0';
 }
 
@@ -115,7 +115,7 @@ int main(int argc, char *argv[])
 	if (argc != 3 || check_for_digits(argv))
 	{
 		for (ti = 0; e[ti]; ti++)
-			_putchar(e[ti]);
+		_putchar(e[ti]);
 		exit(98);
 	}
 	for (l1 = 0; argv[1][l1]; l1++)
@@ -127,7 +127,7 @@ int main(int argc, char *argv[])
 	if (a == NULL)
 	{
 		for (ti = 0; e[ti]; ti++)
-			_putchar(e[ti]);
+		_putchar(e[ti]);
 		exit(98);
 	}
 	init(a, ln - 1);
@@ -137,7 +137,7 @@ int main(int argc, char *argv[])
 		if (t == NULL)
 		{
 			for (ti = 0; e[ti]; ti++)
-				_putchar(e[ti]);
+			_putchar(e[ti]);
 			free(a);
 			exit(98);
 		}
